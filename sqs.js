@@ -1,10 +1,6 @@
 var aws = require('aws-sdk');
 
-// var credentials = new aws.SharedIniFileCredentials({profile: 'default'});
-// aws.config.credentials = credentials;
-
 aws.config.update({region: 'us-east-1'});
-// aws.config.update({region: 'us-east-1',accessKeyId: 'AKIAITPW4SKI22QZMPCQ', secretAccessKey: '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'});
 var sqs = new aws.SQS();
 
 exports.sendMessage = function(message){
