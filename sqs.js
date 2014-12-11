@@ -6,7 +6,7 @@ var sqs = new aws.SQS();
 exports.sendMessage = function(message){
 	var params = {
 	  MessageBody: message, /* required */
-	  QueueUrl: 'https://sqs.us-east-1.amazonaws.com/371269713588/myqueue' /* required */
+	  QueueUrl: 'https://sqs.us-east-1.amazonaws.com/371269713588/deviceTest' /* required */
 
 	};
 	sqs.sendMessage(params, function(err, data) {
