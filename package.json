@@ -1,0 +1,16 @@
+{
+  "name": "ngenious",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node new-server.js"
+  },
+  "main": "new-server.js",
+  "engines": [
+    "node >= 0.8.16"
+  ],
+  "dependencies": {
+    "util-log-timestamp":"x",
+    "aws-sdk" : "x"
+  }
+}
